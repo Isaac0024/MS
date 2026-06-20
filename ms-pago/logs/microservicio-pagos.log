@@ -953,3 +953,62 @@ jakarta.validation.UnexpectedTypeException: HV000030: No validator could be foun
 2026-06-17T21:30:19.404-04:00  INFO 7716 --- [ms_pago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-06-17T21:30:19.405-04:00  INFO 7716 --- [ms_pago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-06-17T21:30:19.409-04:00  INFO 7716 --- [ms_pago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-19T19:15:55.608-04:00  INFO 6640 --- [ms_pago] [main] c.ReservaPro.ms_pago.MsPagoApplication   : Starting MsPagoApplication using Java 21.0.9 with PID 6640 (C:\Users\va-alumno\Desktop\MS\ms-pago\target\classes started by VA-Alumno in C:\Users\va-alumno\Desktop\MS\ms-pago)
+2026-06-19T19:15:55.611-04:00  INFO 6640 --- [ms_pago] [main] c.ReservaPro.ms_pago.MsPagoApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-06-19T19:15:56.320-04:00  INFO 6640 --- [ms_pago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-19T19:15:56.386-04:00  INFO 6640 --- [ms_pago] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2026-06-19T19:15:56.537-04:00  INFO 6640 --- [ms_pago] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d2af4535-7cbc-3cfc-ade8-daba22be98dd
+2026-06-19T19:15:56.857-04:00  INFO 6640 --- [ms_pago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-19T19:15:56.870-04:00  INFO 6640 --- [ms_pago] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-19T19:15:56.871-04:00  INFO 6640 --- [ms_pago] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-06-19T19:15:56.949-04:00  INFO 6640 --- [ms_pago] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-19T19:15:56.949-04:00  INFO 6640 --- [ms_pago] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2026-06-19T19:15:57.147-04:00  INFO 6640 --- [ms_pago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-19T19:15:57.421-04:00  INFO 6640 --- [ms_pago] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b57f915
+2026-06-19T19:15:57.423-04:00  INFO 6640 --- [ms_pago] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-19T19:15:57.461-04:00  INFO 6640 --- [ms_pago] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ms_pago (MySQL 8.4)
+2026-06-19T19:15:57.474-04:00  WARN 6640 --- [ms_pago] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-06-19T19:15:57.498-04:00  INFO 6640 --- [ms_pago] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table `ms_pago`.`flyway_schema_history` does not exist yet
+2026-06-19T19:15:57.501-04:00  INFO 6640 --- [ms_pago] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.018s)
+2026-06-19T19:15:57.526-04:00  INFO 6640 --- [ms_pago] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `ms_pago`.`flyway_schema_history` ...
+2026-06-19T19:15:57.598-04:00  INFO 6640 --- [ms_pago] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `ms_pago`: << Empty Schema >>
+2026-06-19T19:15:57.609-04:00  INFO 6640 --- [ms_pago] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `ms_pago` to version "1 - insertar tablas"
+2026-06-19T19:15:58.028-04:00  WARN 6640 --- [ms_pago] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-06-19T19:15:58.028-04:00  WARN 6640 --- [ms_pago] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous. (SQL State: HY000 - Error Code: 3719)
+2026-06-19T19:15:58.029-04:00  WARN 6640 --- [ms_pago] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: 'utf8mb3_unicode_ci' is a collation of the deprecated character set UTF8MB3. Please consider using UTF8MB4 with an appropriate collation instead. (SQL State: HY000 - Error Code: 3778)
+2026-06-19T19:15:58.114-04:00  WARN 6640 --- [ms_pago] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-06-19T19:15:58.140-04:00  INFO 6640 --- [ms_pago] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `ms_pago` to version "2 - insetar pagos"
+2026-06-19T19:15:58.161-04:00  INFO 6640 --- [ms_pago] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `ms_pago` to version "3 - agregar columnas descuento pago"
+2026-06-19T19:15:58.191-04:00  WARN 6640 --- [ms_pago] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-06-19T19:15:58.225-04:00  INFO 6640 --- [ms_pago] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema `ms_pago`, now at version v3 (execution time 00:00.559s)
+2026-06-19T19:15:58.308-04:00  INFO 6640 --- [ms_pago] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-19T19:15:58.359-04:00  INFO 6640 --- [ms_pago] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-06-19T19:15:58.388-04:00  INFO 6640 --- [ms_pago] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-19T19:15:58.627-04:00  INFO 6640 --- [ms_pago] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-19T19:15:58.674-04:00  WARN 6640 --- [ms_pago] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-19T19:15:58.685-04:00  INFO 6640 --- [ms_pago] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-19T19:15:59.358-04:00  INFO 6640 --- [ms_pago] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-19T19:15:59.384-04:00  INFO 6640 --- [ms_pago] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-19T19:15:59.665-04:00  WARN 6640 --- [ms_pago] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-19T19:16:01.089-04:00  INFO 6640 --- [ms_pago] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-06-19T19:16:01.129-04:00  INFO 6640 --- [ms_pago] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-19T19:16:02.147-04:00  INFO 6640 --- [ms_pago] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-06-19T19:16:02.157-04:00  INFO 6640 --- [ms_pago] [main] c.ReservaPro.ms_pago.MsPagoApplication   : Started MsPagoApplication in 7.978 seconds (process running for 9.149)
+2026-06-19T19:22:06.742-04:00  INFO 6640 --- [ms_pago] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-19T19:22:06.743-04:00  INFO 6640 --- [ms_pago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-19T19:22:06.744-04:00  INFO 6640 --- [ms_pago] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-19T19:22:06.780-04:00  INFO 6640 --- [ms_pago] [http-nio-8080-exec-1] c.R.ms_pago.service.PagoService          : Se esta mostrando el listado de los pagos
+2026-06-19T19:23:02.352-04:00  INFO 6640 --- [ms_pago] [http-nio-8080-exec-3] c.R.ms_pago.service.PagoService          : Iniciando proceso de pago
+2026-06-19T19:24:19.104-04:00  INFO 6640 --- [ms_pago] [http-nio-8080-exec-6] c.R.ms_pago.service.PagoService          : Se esta obteniendo el estado de pago
+2026-06-19T19:39:41.169-04:00  INFO 6640 --- [ms_pago] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-19T19:39:41.180-04:00  INFO 6640 --- [ms_pago] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-19T19:39:41.183-04:00  INFO 6640 --- [ms_pago] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-19T19:39:41.185-04:00  INFO 6640 --- [ms_pago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-19T19:39:41.193-04:00  INFO 6640 --- [ms_pago] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

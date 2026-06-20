@@ -40,7 +40,7 @@ public class PromocionService {
 
     @Transactional
     public CalcularDescuentoResponse calcularYActivarPromocion(String codigoPromocion, Double montoOriginal) {
-        log.info("Se esta calculando el porcentaje de descuento con le monto para aplicar la promoción");
+        log.info("Se esta calculando el porcentaje de descuento con el monto para aplicar la promoción");
         Promocion promocionAux = promocionRepository.findByCodigoPromocion(codigoPromocion.toUpperCase()).orElseThrow(() ->
                 new PromocionNoEncontradaException("El codigo de la promoción no exixte"));
 

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name="pagos-services", url = "localhost:8081/api/v1/promociones")
+@FeignClient(name="pagos-services")
 public interface PagosClient {
 
     @PostMapping("/aplicar")
